@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Electron-Python WebSocket Example</h1>
+    <input id="messageInput" type="text" placeholder="Enter a message">
+    <button id="sendButton">Send to Python</button>
+    <p id="response"></p>
+
+    <script>
+        const socket = new WebSocket('ws://localhost:8765');
+
+        socket.onopen = () => {
+            console.log('WebSocket connection opened');
+        };
+
+        socket.onmessage = (event) => {
+            document.getElementById('response').textContent = `Message from Python: ${event.data}`;
+            console.log(`Message from Python: ${event.data}`);
+        };
+
+        socket.onclose = () => {
+            console.log('WebSocket connection closed');
+        };
+
+        document.getElementById('sendButton').addEventListener('click', () => {
+            const message = document.getElementById('messageInput').value;
+            socket.send(message);
+        });
+
+        
+    </script>
+</body>
+</html>

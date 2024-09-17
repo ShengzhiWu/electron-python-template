@@ -1,5 +1,7 @@
 # electron-python-template
-An Electron template with python backend based on WebSocket.
+An simplest Electron template with python backend based on WebSocket.
+
+This is not just a one-time execution of a Python script to get output. You will have a persistent Python process running during the lifetime of the Electron app, allowing real-time communication with it using JavaScript. This is similar to how Jupyter Notebook works. In principle, you could use this setup to develop your own Jupyter Notebook.
 
 ## Instructions
 

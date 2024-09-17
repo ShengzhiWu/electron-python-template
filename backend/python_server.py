@@ -7,7 +7,7 @@ async def echo(websocket, path):
         response = f"Hello from Python, you sent: {message}"
         await websocket.send(response)
 
-# 启动 WebSocket 服务器，监听本地的 8765 端口
+# Start the WebSocket server, listening on the local port 8765
 async def main():
     async with websockets.serve(echo, "localhost", 8765):
         print("WebSocket server running on ws://localhost:8765")

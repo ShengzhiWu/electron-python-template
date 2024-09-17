@@ -29,7 +29,7 @@ npm i
 python 0.py
 ```
 
-`0.py` is an empty script. I don't know why we have to run this once. If we don't, `backend\python_server.py` will not run correctly when `electron .`.
+`0.py` is an empty script. I don't know why we have to run this before run the Electron app. If we don't, `backend\python_server.py` will not run correctly when `electron .`. You only need to do this once. I think this is a bug. Tell me please in case you know the reason.
 
 ```bash
 electron .

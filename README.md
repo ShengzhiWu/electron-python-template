@@ -15,7 +15,25 @@ Open Anaconda Prompt and run:
 pip install websockets
 ```
 
-### 2.Initialize the project
+### 2.Install Node.js and npm
+
+If you have ever run `npm i` on your device before, you can skip this step.
+
+Go to https://nodejs.org/, install the LTS version.
+
+### 3.Enable Running Scripts (for Windows)
+
+If you have ever run `npm i` on your device before, you can skip this step.
+
+Run Windows PowerShell as administrator. Input
+
+```bash
+Set-ExecutionPolicy RemoteSigned -Scope CurrentUser
+```
+
+Then `Enter`, `Y`, `Enter`.
+
+### 4.Initialize the project
 
 Clone to local.
 

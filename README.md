@@ -15,7 +15,7 @@ Open Anaconda Prompt and run:
 pip install websockets
 ```
 
-### 2.Install Node.js and npm
+### 2.Install Node.js
 
 If you have ever run `npm i` on your device before, you can skip this step.
 
@@ -33,7 +33,7 @@ Set-ExecutionPolicy RemoteSigned -Scope CurrentUser
 
 Then `Enter`, `Y`, `Enter`.
 
-### 4.Initialize the project
+### 4.Initialize the Project
 
 Clone to local.
 
